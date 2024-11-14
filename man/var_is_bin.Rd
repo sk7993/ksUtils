@@ -9,6 +9,9 @@ var_is_bin(x)
 \arguments{
 \item{A}{numeric vector}
 }
+\value{
+A logical vector
+}
 \description{
 Check if variable is binary
 }

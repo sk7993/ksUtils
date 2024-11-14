@@ -29,7 +29,7 @@ p_print <- function(data, msg = NULL, fun = dim){
 #'
 #' @param A numeric vector
 #'
-#' @return
+#' @return A logical vector
 #' @export
 #'
 #' @examples
@@ -42,10 +42,9 @@ var_is_bin <- function(x){
 #'
 #' @param x A factor variable
 #'
-#' @return
+#' @return A logical vector
 #' @export
-#'
-#' @examples
+
 
 cat_one_lvl <- function(x){
   # Check if no. levels for factor variable
@@ -59,24 +58,3 @@ cat_one_lvl <- function(x){
   }
 }
 
-
-#' Tidy broom tables
-#'
-#' @param tidy_df Tibble
-#' @param est_round Number of digits to round to
-#'
-#' @return A tibble
-#' @export
-#' @import broom
-#'
-#' @examples
-tidy_p <- function(tidy_df, est_round) {
-
-  tidy_df %>%
-    select(term, estimate,conf.low, conf.high, p.value) %>%
-    mutate(across(where(is.numeric) & !p.value,
-                  \(x) round(x, est_round)
-    )
-    ) %>%
-    mutate(p.value = round(p.value, 3))
-}

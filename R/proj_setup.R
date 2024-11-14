@@ -4,7 +4,6 @@
 #' @export
 #'
 #' @family proj
-#' @examples
 dir.setup <- function(){
 
   folders <- c("./programs",
@@ -30,8 +29,7 @@ dir.setup <- function(){
 #' @export
 #'
 #' @family proj
-#'
-#' @examples
+
 templates <- function(){
   # Idea: copy over templates for protocols, reports etc.
   file.copy()

@@ -2,10 +2,11 @@
 #'
 #' @param df
 #'
-#' @return
+#' @return A list of name-label pairs
 #' @export
 #'
 #' @examples
+#' create_label(iris)
 
 create_label <- function(df) {
   labels <- as.list(names(df))
@@ -26,7 +27,7 @@ create_label <- function(df) {
 #' @export
 #'
 #' @import dplyr tableone flextable
-#' @examples
+
 tbl12ft <- function(vars = NULL,
                     strata,
                     data = NULL,

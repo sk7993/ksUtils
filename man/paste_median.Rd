@@ -4,7 +4,7 @@
 \alias{paste_median}
 \title{Median IQR from numeric vector}
 \usage{
-paste_median(x)
+paste_median(x, pub = F)
 }
 \arguments{
 \item{x}{Any numeric vector}
@@ -17,4 +17,12 @@ Median IQR from numeric vector
 }
 \examples{
 paste_median(iris$Sepal.Length)
+
+d <- data.frame(x = paste_median(iris$Sepal.Length, pub = T))
+flextable::flextable(d)
 }
+\seealso{
+Other stats: 
+\code{\link{odds}()}
+}
+\concept{stats}

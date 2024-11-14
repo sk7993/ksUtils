@@ -9,6 +9,9 @@ cat_one_lvl(x)
 \arguments{
 \item{x}{A factor variable}
 }
+\value{
+A logical vector
+}
 \description{
 Factor variable with one level
 }

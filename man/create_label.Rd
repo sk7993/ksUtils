@@ -9,6 +9,12 @@ create_label(df)
 \arguments{
 \item{df}{}
 }
+\value{
+A list of name-label pairs
+}
 \description{
 Create label list from dataframe
+}
+\examples{
+create_label(iris)
 }

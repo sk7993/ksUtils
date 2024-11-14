@@ -15,3 +15,8 @@ Numeric vector of length 1
 \description{
 Calculate odds
 }
+\seealso{
+Other stats: 
+\code{\link{paste_median}()}
+}
+\concept{stats}
